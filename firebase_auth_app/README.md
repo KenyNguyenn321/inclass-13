@@ -1,16 +1,31 @@
-# firebase_auth_app
+# Firebase Authentication in Flutter
 
-A new Flutter project.
+This project is a Flutter app that uses Firebase Authentication with Email/Password sign in.
 
-## Getting Started
+## Features
+- Register a new user with email and password
+- Sign in with an existing account
+- Sign out from the profile screen
+- Display the current user's email
+- Update the current user's password
+- Validate email format
+- Validate password length of at least 6 characters
 
-This project is a starting point for a Flutter application.
+## Files
+- `main.dart` initializes Firebase and launches the app
+- `auth_service.dart` contains authentication logic
+- `authentication_screen.dart` contains register and sign in UI
+- `profile_screen.dart` contains current user email, logout, and password update UI
 
-A few resources to get you started if this is your first Flutter project:
+## Validation
+- Email must include `@`
+- Password must be at least 6 characters long
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Testing Completed
+- Valid register
+- Invalid email check
+- Short password check
+- Valid sign in
+- Logout flow
+- Password update flow
+- Sign in again with updated password
